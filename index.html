@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bint Daudu Qur'An Academy — Summer 2026 Landing Page</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Inspiring young hearts to learn, love, and live the Qur'an. Join our Summer 2026 Online Qur'an Academy from Aug 3 - 28, 2026. Ages 4-15.">
+  <meta property="og:title" content="Bint Daudu Qur'An Academy — Summer 2026 Program">
+  <meta property="og:description"
+    content="Nurturing minds and hearts with Qur'an, Tajweed, Islamic manners (Adab), and stories. Live online classes for ages 4-15.">
+  <meta property="og:image" content="quran_hero.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bint Daudu Qur'An Academy — Summer 2026">
+  <meta name="twitter:description"
+    content="Nurturing minds and hearts with Qur'an, Tajweed, and Adab. Register via WhatsApp.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Custom Configuration -->
+  <script src="tailwind.config.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- SECTION 0: PRE-NAVIGATION BAR -->
+  <div id="pre-nav-bar"
+    class="w-full h-10 bg-emerald-deep text-white fixed top-0 left-0 z-50 flex items-center justify-between px-4 md:px-8 transition-transform duration-300">
+    <div class="flex-1 flex items-center justify-center text-xs md:text-sm font-medium tracking-wider select-none">
+      <span class="animate-emoji mr-2">🌟</span>
+      Registration Now Open for Summer 2026 — Limited Slots!
+    </div>
+    <button onclick="dismissPreNav()" class="text-white hover:text-gold-soft p-1 focus:outline-none transition-colors"
+      aria-label="Dismiss notification">
+      <i data-lucide="x" class="w-4 h-4"></i>
+    </button>
+  </div>
+
+  <!-- STICKY NAVIGATION WRAPPER (to keep height spacing) -->
+  <div class="h-[72px] mt-10" id="nav-spacer"></div>
+
+  <!-- SECTION 1: NAVIGATION -->
+  <nav id="main-nav"
+    class="w-full h-[72px] fixed top-10 left-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-soft/20 flex items-center justify-between px-4 md:px-8 max-w-full transition-all duration-300">
+    <!-- Left: Brand Logo -->
+    <a href="#" class="flex items-center gap-3 group">
+      <div
+        class="relative w-10 h-10 bg-emerald-deep rounded-xl flex items-center justify-center overflow-hidden shadow-emerald-tint transition-transform group-hover:scale-105">
+        <!-- Geometric Islamic Star Overlay (8-point star SVG) -->
+        <svg class="w-7 h-7 text-gold fill-current opacity-90" viewBox="0 0 24 24">
+          <path d="M12 2l2.4 4.8 5.3-.8-3.5 4.1 2.4 4.8-5.3-.8-2.4 4.8-2.4-4.8-5.3.8 2.4-4.8-3.5-4.1 5.3.8z" />
+        </svg>
+      </div>
+      <div>
+        <span class="font-playfair font-bold text-lg md:text-xl text-charcoal tracking-wide block leading-none">Bint
+          Daudu</span>
+        <span
+          class="text-[10px] md:text-xs text-emerald-light uppercase tracking-widest font-semibold block mt-0.5">Qur'an
+          Academy</span>
+      </div>
+    </a>
+
+    <!-- Center: Links (Desktop) -->
+    <div class="hidden lg:flex items-center gap-8 font-dmsans">
+      <a href="#programme"
+        class="text-charcoal hover:text-emerald-deep font-medium transition-colors text-[15px] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gold after:transition-all hover:after:w-full">Programme</a>
+      <a href="#pillars"
+        class="text-charcoal hover:text-emerald-deep font-medium transition-colors text-[15px] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gold after:transition-all hover:after:w-full">What
+        They'll Learn</a>
+      <a href="#schedule"
+        class="text-charcoal hover:text-emerald-deep font-medium transition-colors text-[15px] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gold after:transition-all hover:after:w-full">Schedule</a>
+      <a href="#pricing"
+        class="text-charcoal hover:text-emerald-deep font-medium transition-colors text-[15px] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gold after:transition-all hover:after:w-full">Pricing</a>
+      <a href="#contact"
+        class="text-charcoal hover:text-emerald-deep font-medium transition-colors text-[15px] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gold after:transition-all hover:after:w-full">Contact</a>
+    </div>
+
+    <!-- Right: Desktop CTA -->
+    <div class="hidden lg:block">
+      <a href="https://wa.me/2348150361401?text=Assalamu%20Alaikum!%20I'm%20interested%20in%20registering%20my%20child%20for%20the%20Qur'an%20Summer%20Academy%202026."
+        target="_blank"
+        class="bg-emerald-deep hover:bg-emerald-light text-white font-semibold text-sm px-6 py-3 rounded-full shadow-emerald-tint transition-all duration-300 hover:scale-[1.02] hover:shadow-xl inline-flex items-center gap-2">
+        <i data-lucide="phone-call" class="w-4 h-4"></i>
+        <span>Register Now</span>
+      </a>
+    </div>
+
+    <!-- Mobile Hamburg Menu -->
+    <button onclick="toggleMobileMenu(true)"
+      class="lg:hidden text-charcoal hover:text-emerald-deep p-2 focus:outline-none" aria-label="Open navigation menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu"
+    class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm pointer-events-none opacity-0 transition-opacity duration-300">
+    <div
+      class="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-cream shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out"
+      id="mobile-menu-drawer">
+      <div>
+        <div class="flex items-center justify-between mb-8">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-emerald-deep rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-gold fill-current" viewBox="0 0 24 24">
+                <path d="M12 2l2.4 4.8 5.3-.8-3.5 4.1 2.4 4.8-5.3-.8-2.4 4.8-2.4-4.8-5.3.8 2.4-4.8-3.5-4.1 5.3.8z" />
+              </svg>
+            </div>
+            <span class="font-playfair font-bold text-charcoal">Bint Daudu</span>
+          </div>
+          <button onclick="toggleMobileMenu(false)" class="text-charcoal hover:text-emerald-deep p-2"
+            aria-label="Close navigation menu">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <div class="flex flex-col gap-6 font-dmsans text-lg">
+          <a href="#programme" onclick="toggleMobileMenu(false)"
+            class="text-charcoal hover:text-emerald-deep font-semibold flex items-center gap-3 pb-2 border-b border-gold-soft/35"><i
+              data-lucide="calendar" class="w-5 h-5 text-emerald-light"></i> Programme</a>
+          <a href="#pillars" onclick="toggleMobileMenu(false)"
+            class="text-charcoal hover:text-emerald-deep font-semibold flex items-center gap-3 pb-2 border-b border-gold-soft/35"><i
+              data-lucide="book-open" class="w-5 h-5 text-emerald-light"></i> What They'll Learn</a>
+          <a href="#schedule" onclick="toggleMobileMenu(false)"
+            class="text-charcoal hover:text-emerald-deep font-semibold flex items-center gap-3 pb-2 border-b border-gold-soft/35"><i
+              data-lucide="clock" class="w-5 h-5 text-emerald-light"></i> Schedule</a>
+          <a href="#pricing" onclick="toggleMobileMenu(false)"
+            class="text-charcoal hover:text-emerald-deep font-semibold flex items-center gap-3 pb-2 border-b border-gold-soft/35"><i
+              data-lucide="credit-card" class="w-5 h-5 text-emerald-light"></i> Pricing</a>
+          <a href="#contact" onclick="toggleMobileMenu(false)"
+            class="text-charcoal hover:text-emerald-deep font-semibold flex items-center gap-3 pb-2 border-b border-gold-soft/35"><i
+              data-lucide="phone" class="w-5 h-5 text-emerald-light"></i> Contact</a>
+        </div>
+      </div>
+
+      <div class="mt-auto">
+        <a href="https://wa.me/2348150361401?text=Assalamu%20Alaikum!%20I'm%20interested%20in%20registering%20my%20child%20for%20the%20Qur'an%20Summer%20Academy%202026."
+          target="_blank"
+          class="w-full bg-emerald-deep hover:bg-emerald-light text-white text-center font-semibold py-4 rounded-full shadow-emerald-tint transition-all duration-300 block">
+          Register via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECTION 2: HERO -->
+  <section
+    class="relative min-h-[calc(100vh-112px)] flex items-center justify-center bg-gradient-to-br from-cream-warm via-cream to-cream-warm py-16 px-4 md:px-8 overflow-hidden">
+    <!-- Abstract geometric background overlay -->
+    <div class="absolute inset-0 opacity-[0.04] pointer-events-none select-none"
+      style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22><path d=%22M30 0 L60 30 L30 60 L0 30 Z M30 10 L50 30 L30 50 L10 30 Z%22 fill=%22%230D7377%22/></svg>'); background-repeat: repeat;">
+    </div>
+
+    <div class="max-w-[1200px] w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+
+      <!-- Left Column (Text) -->
+      <div class="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start font-dmsans">
+        <span
+          class="text-gold tracking-widest text-[13px] md:text-sm font-bold uppercase mb-4 inline-block bg-gold-soft/40 px-4 py-1.5 rounded-full border border-gold-soft">
+          🌙 Qur'an Summer Academy 2026
+        </span>
+
+        <h1
+          class="font-playfair font-bold text-4xl md:text-5xl lg:text-[56px] text-charcoal leading-[1.1] max-w-xl md:max-w-2xl">
+          Rooted in the <span class="text-emerald-deep relative inline-block">Qur'an<span
+              class="absolute bottom-1 left-0 w-full h-[6px] bg-gold/30 rounded-full"></span></span>,<br>
+          Growing in Faith
+        </h1>
+
+        <p class="text-charcoal-soft font-semibold text-lg md:text-xl mt-6 max-w-md">
+          Inspiring young hearts to learn, love, and live the Qur'an.
+        </p>
+
+        <p class="text-charcoal-soft text-[15px] md:text-base leading-relaxed mt-4 max-w-lg">
+          Give your child a meaningful and engaging summer filled with Qur'an, Islamic knowledge, and character-building
+          — all from the comfort of home.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
+          <a href="https://wa.me/2348150361401?text=Assalamu%20Alaikum!%20I'm%20interested%20in%20registering%20my%20child%20for%20the%20Qur'an%20Summer%20Academy%202026."
+            target="_blank"
+            class="w-full sm:w-auto text-center bg-emerald-deep hover:bg-emerald-light text-white font-semibold text-base px-8 py-4 rounded-full shadow-emerald-tint transition-all duration-300 hover:scale-[1.02] hover:shadow-xl inline-flex items-center justify-center gap-2">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+            <span>Register Your Child</span>
+          </a>
+          <a href="#programme"
+            class="w-full sm:w-auto text-center border-2 border-emerald-deep hover:bg-emerald-deep/5 text-emerald-deep font-semibold text-base px-8 py-4 rounded-full transition-all duration-300 hover:scale-[1.02] inline-flex items-center justify-center">
+            See the Programme
+          </a>
+        </div>
+
+        <!-- Info badge -->
+        <div class="mt-4 flex items-center gap-2 text-emerald-deep font-bold text-sm">
+          <i data-lucide="calendar" class="w-4 h-4 text-gold"></i>
+          <span>Aug 3 – 28, 2026</span>
+        </div>
+
+        <!-- Trust Micro-Bar -->
+        <div
+          class="mt-10 pt-6 border-t border-gold-soft/30 w-full flex flex-wrap justify-center lg:justify-start gap-y-2 gap-x-4 text-xs md:text-sm text-charcoal-soft font-medium">
+          <span class="inline-flex items-center gap-1.5">
+            <i data-lucide="users" class="w-4 h-4 text-emerald-light"></i> Ages 4–15
+          </span>
+          <span class="text-gold">•</span>
+          <span class="inline-flex items-center gap-1.5">
+            <i data-lucide="globe" class="w-4 h-4 text-emerald-light"></i> Worldwide
+          </span>
+          <span class="text-gold">•</span>
+          <span class="inline-flex items-center gap-1.5">
+            <i data-lucide="monitor" class="w-4 h-4 text-emerald-light"></i> Live Online Classes
+          </span>
+        </div>
+      </div>
+
+      <!-- Right Column (Visual) -->
+      <div class="lg:col-span-5 flex justify-center relative mt-8 lg:mt-0">
+        <!-- Floating Illustration Container -->
+        <div class="relative w-72 h-72 sm:w-96 sm:h-96 flex items-center justify-center bg-radial-gradient">
+          <!-- Background radial glow -->
+          <div class="absolute inset-0 bg-gold-soft/30 rounded-full blur-3xl -z-10"></div>
+
+          <!-- Outer circle frame with Islamic pattern overlay -->
+          <div class="absolute inset-2 border-2 border-gold/25 rounded-full -z-10 animate-[spin_60s_linear_infinite]">
+            <svg class="w-full h-full text-gold-soft/30" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="0.5"
+                stroke-dasharray="2 3" />
+            </svg>
+          </div>
+
+          <!-- Main Image -->
+          <div
+            class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-gold-soft bg-cream-warm flex items-center justify-center shadow-2xl animate-float">
+            <img src="quran_hero.png" alt="Stylized Open Qur'an Illustration" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Growth leaf badge (bottom right) -->
+          <div
+            class="absolute bottom-6 right-6 bg-white p-3.5 rounded-2xl shadow-xl border border-gold-soft/40 animate-bounce">
+            <i data-lucide="sprout" class="w-7 h-7 text-emerald-deep"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Wave divider at bottom -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+      <svg class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[60px]" viewBox="0 0 1200 120"
+        preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,120 600,120 C850,120 1050,90 1200,0 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- SECTION 3: THE PROBLEM / DESIRE -->
+  <section class="py-24 bg-white relative">
+    <div class="max-w-[768px] mx-auto px-4 md:px-8 text-center">
+
+      <span class="text-gold tracking-widest text-[12px] md:text-sm font-bold uppercase mb-3 inline-block">
+        Every Parent's Dilemma
+      </span>
+
+      <h2 class="font-playfair font-bold text-3xl md:text-[40px] text-charcoal leading-[1.2] mb-8 reveal-on-scroll">
+        Summer Breaks Can Be Idle — Or They Can Be Transformative
+      </h2>
+
+      <div
+        class="space-y-6 text-charcoal-soft font-dmsans text-[15px] md:text-lg leading-relaxed text-left max-w-2xl mx-auto reveal-on-scroll stagger-delay-1">
+        <p class="border-l-4 border-emerald-deep pl-4">
+          <strong class="text-charcoal block mb-1">The Relatable Struggle:</strong>
+          The long summer months stretch ahead. Without structure, screen time fills the gaps. As parents, we want more
+          for our children — we want their hearts to grow, not just their height. We wish to keep them tied to their
+          Deen in an environment that is engaging, easy, and comfortable.
+        </p>
+        <p class="border-l-4 border-gold pl-4">
+          <strong class="text-charcoal block mb-1">The Aspirational Shift:</strong>
+          Imagine your child returning to school not just refreshed, but spiritually rooted — having memorized new
+          surahs, learned proper Tajweed, and embraced the beauty of Islamic manners. This summer can be that turning
+          point where Deen becomes a joy, not just a duty.
+        </p>
+      </div>
+
+      <!-- Decorative Divider -->
+      <div class="my-10 flex items-center justify-center gap-2 reveal-on-scroll stagger-delay-2">
+        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+        <span class="w-3.5 h-[1.5px] bg-gradient-to-r from-gold-soft via-gold to-gold-soft"></span>
+        <span class="w-2 h-2 bg-emerald-deep transform rotate-45"></span>
+        <span class="w-3.5 h-[1.5px] bg-gradient-to-r from-gold-soft via-gold to-gold-soft"></span>
+        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+      </div>
+
+      <p class="text-emerald-deep font-medium italic text-base md:text-lg reveal-on-scroll stagger-delay-3">
+        "Bint Daudu Qur'An Academy was created for exactly this purpose."
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 4: THE GUIDE -->
+  <section class="py-24 bg-cream relative">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left: Image Container -->
+        <div class="lg:col-span-5 flex flex-col items-center reveal-on-scroll">
+          <div
+            class="relative w-full max-w-[340px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-soft bg-cream-warm flex flex-col justify-center items-center p-6 text-center">
+
+            <!-- Styled SVG Placeholder for Portrait -->
+            <div
+              class="w-36 h-36 bg-emerald-deep/15 rounded-full border-2 border-gold flex items-center justify-center mb-6 relative">
+              <i data-lucide="user" class="w-16 h-16 text-emerald-deep"></i>
+              <!-- Subtle crescent design behind head -->
+              <div class="absolute -top-1 -right-1 w-6 h-6 text-gold">🌙</div>
+            </div>
+
+            <span class="font-playfair text-xl font-bold text-charcoal">Hafizah Mutmainnah Daudu</span>
+            <span class="text-xs text-emerald-light uppercase font-bold tracking-widest mt-1">Lead Instructor</span>
+
+            <div
+              class="w-full mt-6 pt-4 border-t border-gold-soft/30 flex items-center justify-center gap-1.5 text-xs text-charcoal-soft font-semibold">
+              <i data-lucide="award" class="w-4 h-4 text-gold"></i>
+              <span>Certified Reciter & Educator</span>
+            </div>
+          </div>
+
+          <div class="mt-4 text-center">
+            <h4 class="font-playfair font-bold text-lg text-charcoal">Hafizah Mutmainnah Daudu</h4>
+            <p class="text-sm text-charcoal-soft">Qur'an & Arabic Instructor</p>
+          </div>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div class="lg:col-span-7 font-dmsans reveal-on-scroll stagger-delay-1">
+          <span class="text-gold tracking-widest text-[12px] md:text-sm font-bold uppercase mb-2 inline-block">
+            Your Child's Guide This Summer
+          </span>
+          <h2 class="font-playfair font-bold text-3xl md:text-[40px] text-charcoal leading-[1.2] mb-6">
+            Meet Hafizah Mutmainnah Daudu
+          </h2>
+
+          <div class="space-y-4 text-charcoal-soft leading-relaxed text-sm md:text-base">
+            <p>
+              With years of dedicated teaching and a heart committed to nurturing the next generation, Hafizah
+              Mutmainnah Daudu brings both expertise and warmth to every lesson.
+            </p>
+            <p>
+              Her approach goes beyond repetition and rote memorization — she cultivates character, instills a genuine
+              love for the Word of Allah, and creates a safe, interactive, and joyful space where children feel
+              supported.
+            </p>
+          </div>
+
+          <!-- Credentials -->
+          <ul class="mt-8 space-y-3 font-semibold text-charcoal text-sm md:text-base">
+            <li class="flex items-center gap-2">
+              <span class="text-success flex-shrink-0"><i data-lucide="check-circle-2"
+                  class="w-5 h-5 text-success fill-success/10"></i></span>
+              Certified Qur'an & Arabic Instructor
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-success flex-shrink-0"><i data-lucide="check-circle-2"
+                  class="w-5 h-5 text-success fill-success/10"></i></span>
+              Specialized in teaching children ages 4–15
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-success flex-shrink-0"><i data-lucide="check-circle-2"
+                  class="w-5 h-5 text-success fill-success/10"></i></span>
+              Experienced in online interactive learning systems
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-success flex-shrink-0"><i data-lucide="check-circle-2"
+                  class="w-5 h-5 text-success fill-success/10"></i></span>
+              Committed to Islamic character development (Tarbiyah)
+            </li>
+          </ul>
+
+          <!-- Quote block -->
+          <div class="mt-8 border-l-4 border-gold pl-6 py-4 bg-cream-warm/50 rounded-r-lg">
+            <blockquote class="italic text-charcoal-soft text-sm md:text-[15px] leading-relaxed">
+              "Every child is a seed of faith. My role is to water it with knowledge, nurture it with patience, and
+              watch it grow into a strong tree of righteousness."
+            </blockquote>
+            <cite class="block font-semibold text-xs text-charcoal uppercase tracking-widest mt-2">
+              — Hafizah Mutmainnah Daudu
+            </cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 5: THE PLAN — WHAT YOUR CHILD WILL LEARN -->
+  <section id="pillars" class="py-24 bg-white relative">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-[700px] mx-auto mb-16">
+        <span class="text-gold tracking-widest text-[12px] md:text-sm font-bold uppercase mb-2 inline-block">
+          A Comprehensive Curriculum
+        </span>
+        <h2 class="font-playfair font-bold text-3xl md:text-[40px] text-charcoal leading-[1.2] mb-4">
+          What Your Child Will Learn
+        </h2>
+        <p class="text-charcoal-soft text-base md:text-lg">
+          Seven pillars of learning designed to nurture the mind, heart, and soul.
+        </p>
+      </div>
+
+      <!-- 7 Pillars Grid -->
+      <!-- Desktop layout: 3 columns, with the central one highlighted/centered. -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 font-dmsans">
+
+        <!-- Card 1 -->
+        <div
+          class="bg-cream-warm hover:-translate-y-1 hover:shadow-lg border border-gold-soft/30 hover:border-gold/30 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 reveal-on-scroll">
+          <div class="w-16 h-16 bg-emerald-deep/10 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="book-open" class="w-8 h-8 text-emerald-deep"></i>
+          </div>
+          <h3 class="font-playfair font-bold text-xl md:text-2xl text-charcoal mb-3">Qur'an Reading & Recitation</h3>
+          <p class="text-charcoal-soft text-sm leading-relaxed">Building fluency and confidence in reading the Book of
+            Allah.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-cream-warm hover:-translate-y-1 hover:shadow-lg border border-gold-soft/30 hover:border-gold/30 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 reveal-on-scroll stagger-delay-1">
+          <div class="w-16 h-16 bg-emerald-deep/10 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="mic" class="w-8 h-8 text-emerald-deep"></i>
+          </div>
+          <h3 class="font-playfair font-bold text-xl md:text-2xl text-charcoal mb-3">Tajweed Basics</h3>
+          <p class="text-charcoal-soft text-sm leading-relaxed">Learning the rules of proper pronunciation and melodious
+            recitation.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-cream-warm hover:-translate-y-1 hover:shadow-lg border border-gold-soft/30 hover:border-gold/30 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 reveal-on-scroll stagger-delay-2">
+          <div class="w-16 h-16 bg-emerald-deep/10 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="pen-tool" class="w-8 h-8 text-emerald-deep"></i>
+          </div>
+          <h3 class="font-playfair font-bold text-xl md:text-2xl text-charcoal mb-3">Arabic Reading & Writing</h3>
+          <p class="text-charcoal-soft text-sm leading-relaxed">Foundational literacy in the beautiful language of the
+            Qur'an.</p>
+        </div>
+
+        <!-- Card 4 (Highlighted Central Card - Islamic Manners Adab) -->
+        <div
+          class="lg:col-span-1 bg-cream-warm rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 reveal-on-scroll md:col-span-2 lg:scale-[1.05] shadow-xl border-2 border-gold/40 relative overflow-hidden">
+          <div
+            class="absolute top-0 right-0 bg-gold text-emerald-deep text-[10px] font-extrabold uppercase px-3 py-1 rounded-bl-xl tracking-wider">
+            Heart of the Program
+          </div>
+          <div class="w-16 h-16 bg-emerald-deep/15 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="sprout" class="w-8 h-8 text-emerald-deep"></i>
+          </div>
+          <h3 class="font-playfair font-bold text-2xl text-charcoal mb-3">Islamic Manners (Adab)</h3>
+          <p class="text-charcoal-soft text-sm leading-relaxed">Cultivating respect, kindness, and noble character
+            values through the teachings of Islam.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-cream-warm hover:-translate-y-1 hover:shadow-lg border border-gold-soft/30 hover:border-gold/30 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 reveal-on-scroll stagger-delay-1">
+          <div class="w-16 h-16 bg-emerald-deep/10 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="scroll" class="w-8 h-8 text-emerald-deep"></i>
+          </div>
+          <h3 class="font-playfair font-bold text-xl md:text-2xl text-charcoal mb-3">Daily Hadith</h3>
+          <p class="text-charcoal-soft text-sm leading-relaxed">Authentic prophetic narrations to guide daily lives and
+            shape a moral compass.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="bg-cream-warm hover:-translate-y-1 hover:shadow-lg border border-gold-soft/30 hover:border-gold/30 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 reveal-on-scroll stagger-delay-2">
+          <div class="w-16 h-16 bg-emerald-deep/10 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="book-open-check" class="w-8 h-8 text-emerald-deep"></i>
+          </div>
+          <h3 class="font-playfair font-bold text-xl md:text-2xl text-charcoal mb-3">Inspiring Islamic Stories</h3>
+          <p class="text-charcoal-soft text-sm leading-relaxed">Tales of the Prophets and righteous predecessors to
+            inspire young minds.</p>
+        </div>
+
+        <!-- Card 7 (Positioned nicely at bottom center in grid layouts) -->
+        <div
+          class="bg-cream-warm hover:-translate-y-1 hover:shadow-lg border border-gold-soft/30 hover:border-gold/30 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 reveal-on-scroll md:col-span-2 lg:col-span-1 lg:translate-x-full md:mx-auto md:max-w-md">
+          <div class="w-16 h-16 bg-emerald-deep/10 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="heart-handshake" class="w-8 h-8 text-emerald-deep"></i>
+          </div>
+          <h3 class="font-playfair font-bold text-xl md:text-2xl text-charcoal mb-3">Daily Du'as</h3>
+          <p class="text-charcoal-soft text-sm leading-relaxed">Memorizing and understanding beautiful supplications for
+            daily habits.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 6: PROGRAMME DETAILS -->
+  <section id="programme" class="py-24 bg-emerald-deep text-white relative">
+    <!-- Geometric frame opacity 5% -->
+    <div class="absolute inset-0 opacity-[0.05] pointer-events-none select-none"
+      style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22><path d=%22M30 0 L60 30 L30 60 L0 30 Z M30 10 L50 30 L30 50 L10 30 Z%22 fill=%22%23FFFFFF%22/></svg>'); background-repeat: repeat;">
+    </div>
+
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8 relative z-10">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-[700px] mx-auto mb-16">
+        <span class="text-gold tracking-widest text-[12px] md:text-sm font-bold uppercase mb-2 inline-block">
+          Mark Your Calendar
+        </span>
+        <h2 class="font-playfair font-bold text-3xl md:text-[40px] text-white leading-[1.2] mb-4">
+          Programme Details
+        </h2>
+        <p class="text-white/80 text-base md:text-lg">
+          Four weeks of structured, joyful learning — designed to fit your family's summer rhythm.
+        </p>
+      </div>
+
+      <!-- Timeline Visualization -->
+      <div class="mb-16 max-w-3xl mx-auto reveal-on-scroll">
+        <!-- Desktop Timeline -->
+        <div
+          class="hidden md:flex items-center justify-between relative px-8 py-6 bg-white/5 rounded-3xl border border-white/10 backdrop-blur-sm">
+          <!-- Timeline Connecting Line background -->
+          <div class="absolute top-1/2 left-[12%] right-[12%] h-[3px] bg-white/20 -translate-y-1/2 -z-10"></div>
+          <!-- Animated Fill Line -->
+          <div
+            class="absolute top-1/2 left-[12%] right-[12%] h-[3px] bg-gold -translate-y-1/2 -z-10 origin-left scale-x-0 transition-transform duration-[2000ms] ease-out"
+            id="desktop-timeline-line"></div>
+
+          <!-- Start Node -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-14 h-14 bg-gold text-emerald-deep rounded-full flex items-center justify-center shadow-lg font-bold">
+              <i data-lucide="calendar-days" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs uppercase font-bold text-gold tracking-widest mt-3">Start Date</span>
+            <span class="text-sm font-semibold mt-1">Mon, Aug 3, 2026</span>
+          </div>
+
+          <!-- Duration Node -->
+          <div
+            class="flex flex-col items-center text-center bg-emerald-deep px-5 py-2.5 rounded-full border border-white/20 shadow-md">
+            <span class="text-gold text-xs font-extrabold uppercase tracking-widest">Duration</span>
+            <span class="text-sm font-bold text-white">4 Whole Weeks</span>
+          </div>
+
+          <!-- End Node -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-14 h-14 bg-gold text-emerald-deep rounded-full flex items-center justify-center shadow-lg font-bold">
+              <i data-lucide="flag" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs uppercase font-bold text-gold tracking-widest mt-3">End Date</span>
+            <span class="text-sm font-semibold mt-1">Fri, Aug 28, 2026</span>
+          </div>
+        </div>
+
+        <!-- Mobile Timeline (Vertical) -->
+        <div
+          class="md:hidden flex flex-col gap-8 relative pl-10 py-4 bg-white/5 rounded-2xl border border-white/10 p-6">
+          <!-- Timeline Line -->
+          <div class="absolute top-10 bottom-10 left-[34px] w-[3px] bg-white/20"></div>
+          <!-- Active Line -->
+          <div
+            class="absolute top-10 left-[34px] w-[3px] bg-gold origin-top scale-y-0 transition-transform duration-[2000ms]"
+            id="mobile-timeline-line"></div>
+
+          <!-- Start Node -->
+          <div class="flex items-start gap-4 relative">
+            <div
+              class="w-10 h-10 bg-gold text-emerald-deep rounded-full flex items-center justify-center shadow-md flex-shrink-0 relative z-10">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-gold text-[11px] font-bold uppercase tracking-widest block">Start Date</span>
+              <span class="text-base font-bold text-white">Mon, Aug 3, 2026</span>
+            </div>
+          </div>
+
+          <!-- Duration Node -->
+          <div class="flex items-start gap-4 relative">
+            <div
+              class="w-10 h-10 bg-white/10 text-gold rounded-full flex items-center justify-center shadow-md flex-shrink-0 relative z-10 border border-white/20">
+              <i data-lucide="hourglass" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-gold text-[11px] font-bold uppercase tracking-widest block">Duration</span>
+              <span class="text-base font-bold text-white">4 Weeks of Active Classes</span>
+            </div>
+          </div>
+
+          <!-- End Node -->
+          <div class="flex items-start gap-4 relative">
+            <div
+              class="w-10 h-10 bg-gold text-emerald-deep rounded-full flex items-center justify-center shadow-md flex-shrink-0 relative z-10">
+              <i data-lucide="flag" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-gold text-[11px] font-bold uppercase tracking-widest block">End Date</span>
+              <span class="text-base font-bold text-white">Fri, Aug 28, 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Schedule Cards Grid -->
+      <div id="schedule" class="grid grid-cols-1 md:grid-cols-3 gap-6 font-dmsans reveal-on-scroll stagger-delay-1">
+
+        <!-- Card 1 -->
+        <div
+          class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 flex flex-col justify-between hover:border-gold/40 transition-colors duration-300">
+          <div>
+            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-6">
+              <i data-lucide="calendar" class="w-6 h-6 text-gold"></i>
+            </div>
+            <h3 class="text-white font-bold text-xl mb-2">Class Days</h3>
+            <p class="text-white/70 text-sm mb-6">Three focused sessions per week</p>
+          </div>
+          <div>
+            <span class="text-2xl font-bold text-white block">Mon • Wed • Fri</span>
+            <span class="text-gold-soft text-xs font-semibold block mt-1">Live Interactive Class Times</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 flex flex-col justify-between hover:border-gold/40 transition-colors duration-300 relative">
+          <div
+            class="absolute top-4 right-4 bg-success text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
+            Available
+          </div>
+          <div>
+            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-6">
+              <i data-lucide="sun" class="w-6 h-6 text-gold"></i>
+            </div>
+            <h3 class="text-white font-bold text-xl mb-2">Session A</h3>
+            <p class="text-white/70 text-sm mb-6">Perfect for early afternoon routines</p>
+          </div>
+          <div>
+            <span class="text-2xl font-bold text-white block">4:00 PM – 5:00 PM</span>
+            <span class="text-gold-soft text-xs font-semibold block mt-1">West Africa Time (WAT)</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 flex flex-col justify-between hover:border-gold/40 transition-colors duration-300 relative">
+          <div
+            class="absolute top-4 right-4 bg-success text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
+            Available
+          </div>
+          <div>
+            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-6">
+              <i data-lucide="moon" class="w-6 h-6 text-gold"></i>
+            </div>
+            <h3 class="text-white font-bold text-xl mb-2">Session B</h3>
+            <p class="text-white/70 text-sm mb-6">Ideal after evening activities</p>
+          </div>
+          <div>
+            <span class="text-2xl font-bold text-white block">6:00 PM – 7:00 PM</span>
+            <span class="text-gold-soft text-xs font-semibold block mt-1">West Africa Time (WAT)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA subtext -->
+      <div class="text-center mt-12">
+        <p class="text-white/80 italic text-base">
+          "Choose the session that fits your family best during registration."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 7: WHAT TO EXPECT -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-[700px] mx-auto mb-16">
+        <span class="text-gold tracking-widest text-[12px] md:text-sm font-bold uppercase mb-2 inline-block">
+          A Complete Experience
+        </span>
+        <h2 class="font-playfair font-bold text-3xl md:text-[40px] text-charcoal leading-[1.2] mb-4">
+          What to Expect
+        </h2>
+        <p class="text-charcoal-soft text-base md:text-lg">
+          We've thought of everything — so you can focus on your child's growth.
+        </p>
+      </div>
+
+      <!-- Grid of expectations (2x3 on desktop) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-dmsans">
+
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-emerald-deep flex items-start gap-4 hover:shadow-md hover:border-l-gold transition-all duration-300 reveal-on-scroll">
+          <div class="w-12 h-12 bg-emerald-deep/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i data-lucide="video" class="w-6 h-6 text-emerald-deep"></i>
+          </div>
+          <div>
+            <h3 class="text-charcoal font-bold text-base md:text-lg mb-1">Interactive Live Classes</h3>
+            <p class="text-charcoal-soft text-xs md:text-sm leading-relaxed">Real-time engagement with Hafizah
+              Mutmainnah — not pre-recorded videos.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-emerald-deep flex items-start gap-4 hover:shadow-md hover:border-l-gold transition-all duration-300 reveal-on-scroll stagger-delay-1">
+          <div class="w-12 h-12 bg-emerald-deep/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i data-lucide="clipboard-list" class="w-6 h-6 text-emerald-deep"></i>
+          </div>
+          <div>
+            <h3 class="text-charcoal font-bold text-base md:text-lg mb-1">Weekly Assignments</h3>
+            <p class="text-charcoal-soft text-xs md:text-sm leading-relaxed">Structured, simple practice guidelines to
+              reinforce classroom learning at home.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-emerald-deep flex items-start gap-4 hover:shadow-md hover:border-l-gold transition-all duration-300 reveal-on-scroll stagger-delay-2">
+          <div class="w-12 h-12 bg-emerald-deep/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i data-lucide="mail" class="w-6 h-6 text-emerald-deep"></i>
+          </div>
+          <div>
+            <h3 class="text-charcoal font-bold text-base md:text-lg mb-1">Weekly Progress Updates</h3>
+            <p class="text-charcoal-soft text-xs md:text-sm leading-relaxed">Direct updates so parents stay fully
+              informed of their child's learning journey.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-emerald-deep flex items-start gap-4 hover:shadow-md hover:border-l-gold transition-all duration-300 reveal-on-scroll">
+          <div class="w-12 h-12 bg-emerald-deep/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i data-lucide="check-square" class="w-6 h-6 text-emerald-deep"></i>
+          </div>
+          <div>
+            <h3 class="text-charcoal font-bold text-base md:text-lg mb-1">End-of-Programme Assessment</h3>
+            <p class="text-charcoal-soft text-xs md:text-sm leading-relaxed">A gentle evaluation to celebrate
+              achievements and map out future learning steps.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-emerald-deep flex items-start gap-4 hover:shadow-md hover:border-l-gold transition-all duration-300 reveal-on-scroll stagger-delay-1">
+          <div class="w-12 h-12 bg-emerald-deep/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i data-lucide="award" class="w-6 h-6 text-emerald-deep"></i>
+          </div>
+          <div>
+            <h3 class="text-charcoal font-bold text-base md:text-lg mb-1">E-Certificate of Participation</h3>
+            <p class="text-charcoal-soft text-xs md:text-sm leading-relaxed">A digital token recognizing and celebrating
+              your child's summer dedication.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-emerald-deep flex items-start gap-4 hover:shadow-md hover:border-l-gold transition-all duration-300 reveal-on-scroll stagger-delay-2">
+          <div class="w-12 h-12 bg-emerald-deep/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-emerald-deep"></i>
+          </div>
+          <div>
+            <h3 class="text-charcoal font-bold text-base md:text-lg mb-1">Virtual Graduation Ceremony</h3>
+            <p class="text-charcoal-soft text-xs md:text-sm leading-relaxed">A heartwarming closing ceremony to
+              celebrate achievements alongside family.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 8: SOCIAL PROOF [PLACEHOLDER] -->
+  <section class="py-24 bg-white relative">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+
+      <div class="text-center max-w-[700px] mx-auto mb-12">
+        <span class="text-gold tracking-widest text-[12px] md:text-sm font-bold uppercase mb-2 inline-block">
+          Trusted by Families
+        </span>
+        <h2 class="font-playfair font-bold text-3xl md:text-[40px] text-charcoal leading-[1.2]">
+          What Parents Are Saying
+        </h2>
+      </div>
+
+      <!-- Testimonial Placeholder -->
+      <div
+        class="max-w-3xl mx-auto border-2 border-dashed border-charcoal-soft/20 rounded-3xl p-8 md:p-12 bg-cream/30 text-center relative reveal-on-scroll">
+        <div
+          class="w-14 h-14 bg-cream border border-gold-soft rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+          <i data-lucide="quote" class="w-6 h-6 text-gold"></i>
+        </div>
+
+        <p class="text-charcoal-soft italic text-[15px] md:text-base leading-relaxed max-w-xl mx-auto">
+          [TESTIMONIAL PLACEHOLDER — Parent testimonials will be displayed here soon. The academy is preparing 2–3
+          inspiring parent quotes featuring their child's age, location, and visual avatar.]
+        </p>
+
+        <!-- Coming soon indicators -->
+        <div class="mt-8 flex justify-center gap-4">
+          <div
+            class="flex items-center gap-1.5 text-xs text-charcoal-soft bg-white px-3.5 py-1.5 rounded-full shadow-sm border border-gold-soft/30">
+            <span class="w-2 h-2 rounded-full bg-success animate-ping"></span>
+            <span>Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 9: PRICING & URGENCY -->
+  <section id="pricing" class="py-24 bg-cream relative">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-[700px] mx-auto mb-16">
+        <span class="text-gold tracking-widest text-[12px] md:text-sm font-bold uppercase mb-2 inline-block">
+          Invest in Their Future
+        </span>
+        <h2 class="font-playfair font-bold text-3xl md:text-[40px] text-charcoal leading-[1.2] mb-4">
+          Tuition Fee
+        </h2>
+        <p class="text-charcoal-soft text-base md:text-lg">
+          Affordable investment. Priceless returns. <span class="font-semibold italic text-emerald-deep">Barakallahu
+            feekum.</span>
+        </p>
+      </div>
+
+      <!-- Two Pricing Cards Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto font-dmsans items-stretch relative">
+
+        <!-- Card 1: Early Bird (Elevated) -->
+        <div
+          class="bg-emerald-deep text-white rounded-3xl p-8 shadow-2xl transform md:scale-[1.03] border-4 border-gold relative flex flex-col justify-between transition-all duration-300 hover:shadow-emerald-tint reveal-on-scroll">
+
+          <!-- Badge -->
+          <div
+            class="absolute -top-[18px] left-1/2 -translate-x-1/2 bg-gold text-emerald-deep font-extrabold px-6 py-1.5 rounded-full text-xs uppercase tracking-widest shadow-md">
+            🔥 FIRST 5 ONLY
+          </div>
+
+          <div>
+            <div class="flex justify-between items-start mb-6 mt-2">
+              <div>
+                <h3 class="font-playfair font-bold text-2xl text-gold">Early Bird</h3>
+                <p class="text-white/70 text-xs mt-1">Limited-time special slots</p>
+              </div>
+              <span class="text-gold"><i data-lucide="zap" class="w-6 h-6 text-gold fill-gold/15"></i></span>
+            </div>
+
+            <!-- Price display -->
+            <div class="mb-8">
+              <span class="text-5xl font-bold text-white tracking-tight">₦12,000</span>
+              <span class="text-gold-soft text-sm font-medium ml-1">/ child</span>
+            </div>
+
+            <!-- Features list -->
+            <ul class="space-y-4 text-sm font-medium border-t border-white/10 pt-6">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-gold flex-shrink-0"></i>
+                Full 4-week programme access
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-gold flex-shrink-0"></i>
+                All learning materials included
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-gold flex-shrink-0"></i>
+                Weekly parent updates
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-gold flex-shrink-0"></i>
+                E-Certificate & Graduation Access
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-gold flex-shrink-0"></i>
+                Priority class session selection
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/2348150361401?text=Assalamu%20Alaikum!%20I%20would%20like%20to%20claim%20the%20Early%20Bird%20slot%20(N12,000)%20for%20my%20child%20for%20the%20Qur'an%20Summer%20Academy%202026."
+              target="_blank"
+              class="w-full bg-gold hover:bg-white text-emerald-deep text-center font-bold py-4 rounded-full shadow-lg block transition-colors duration-300 hover:scale-[1.02]">
+              Claim Early Bird
+            </a>
+            <p class="text-center text-gold-soft text-xs font-semibold mt-3">
+              Only 5 spots left at this price — act fast!
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Regular Fee -->
+        <div
+          class="bg-white text-charcoal rounded-3xl p-8 shadow-md border border-gold-soft flex flex-col justify-between transition-all duration-300 hover:shadow-lg reveal-on-scroll stagger-delay-1">
+
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div>
+                <h3 class="font-playfair font-bold text-2xl text-emerald-deep">Standard</h3>
+                <p class="text-charcoal-soft text-xs mt-1">Full-tuition enrolment</p>
+              </div>
+              <span class="text-emerald-light"><i data-lucide="calendar-check"
+                  class="w-6 h-6 text-emerald-light"></i></span>
+            </div>
+
+            <!-- Price display -->
+            <div class="mb-8">
+              <span class="text-5xl font-bold text-charcoal tracking-tight">₦15,000</span>
+              <span class="text-charcoal-soft text-sm font-medium ml-1">/ child</span>
+            </div>
+
+            <!-- Features list -->
+            <ul class="space-y-4 text-sm font-medium border-t border-gold-soft/20 pt-6 text-charcoal-soft">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-success flex-shrink-0"></i>
+                Full 4-week programme access
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-success flex-shrink-0"></i>
+                All learning materials included
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-success flex-shrink-0"></i>
+                Weekly parent updates
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-success flex-shrink-0"></i>
+                E-Certificate & Graduation Access
+              </li>
+              <li class="text-charcoal-soft/50 line-through flex items-center gap-3">
+                <i data-lucide="x" class="w-5 h-5 text-charcoal-soft/40 flex-shrink-0"></i>
+                Priority class session selection
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/2348150361401?text=Assalamu%20Alaikum!%20I'm%20interested%20in%20registering%20my%20child%20for%20the%20Qur'an%20Summer%20Academy%202026%20at%20the%20Standard%20Fee%20(N15,000)."
+              target="_blank"
+              class="w-full bg-emerald-deep hover:bg-emerald-light text-white text-center font-bold py-4 rounded-full shadow-lg block transition-colors duration-300 hover:scale-[1.02]">
+              Register at Regular Fee
+            </a>
+            <p class="text-center text-charcoal-soft text-xs font-semibold mt-3">
+              Standard tuition slots available
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Urgency Bar -->
+      <div
+        class="max-w-4xl mx-auto mt-12 bg-urgency/5 border border-urgency/20 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-center gap-3 text-center reveal-on-scroll">
+        <i data-lucide="alert-circle" class="w-5 h-5 text-urgency animate-pulse flex-shrink-0"></i>
+        <span class="text-urgency font-bold text-sm md:text-base">🚨 Limited Slots Available! Offer ends when early bird
+          and regular spots fill.</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 10: FINAL CTA -->
+  <section id="contact" class="py-28 bg-emerald-deep text-white relative text-center overflow-hidden">
+    <!-- Huge geometric Islamic pattern 5% opacity -->
+    <div class="absolute inset-0 opacity-[0.04] pointer-events-none select-none flex items-center justify-center">
+      <svg class="w-[600px] h-[600px] text-white fill-current" viewBox="0 0 100 100">
+        <path d="M50 0 L100 50 L50 100 L0 50 Z M50 15 L85 50 L50 85 L15 50 Z M50 30 L70 50 L50 70 L30 50 Z" />
+      </svg>
+    </div>
+
+    <div class="max-w-[768px] mx-auto px-4 md:px-8 relative z-10">
+
+      <h2 class="font-playfair font-bold text-3xl md:text-5xl leading-[1.2] mb-6 reveal-on-scroll">
+        Give Your Child a Meaningful Summer
+      </h2>
+
+      <p class="text-white/80 font-dmsans text-lg md:text-xl mb-10 max-w-2xl mx-auto reveal-on-scroll stagger-delay-1">
+        Spaces are limited. Registration is simple. The impact lasts a lifetime.
+      </p>
+
+      <!-- Massive WhatsApp CTA -->
+      <div class="reveal-on-scroll stagger-delay-2">
+        <a href="https://wa.me/2348150361401?text=Assalamu%20Alaikum!%20I'm%20interested%20in%20registering%20my%20child%20for%20the%20Qur'an%20Summer%20Academy%202026."
+          target="_blank"
+          class="inline-flex items-center gap-3 bg-gold hover:bg-white text-emerald-deep font-extrabold text-lg md:text-xl px-10 py-5 rounded-full shadow-2xl transition-all duration-300 hover:scale-[1.04] hover:shadow-gold-tint">
+          <!-- WhatsApp Icon -->
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.437.002 9.861-4.416 9.864-9.86.002-2.638-1.024-5.117-2.892-6.988-1.87-1.872-4.354-2.901-6.992-2.902-5.442 0-9.866 4.418-9.87 9.864-.002 1.81.488 3.578 1.418 5.122L1.875 22.03l4.772-1.252zM17.51 15.35c-.29-.145-1.72-.85-1.985-.947-.266-.097-.46-.145-.654.145-.193.29-.75.947-.92 1.14-.168.193-.338.217-.628.072-.29-.144-1.226-.452-2.335-1.444-.863-.77-1.446-1.72-1.615-2.012-.17-.29-.018-.448.127-.592.13-.13.29-.34.436-.508.145-.168.193-.29.29-.483.096-.193.048-.362-.024-.507-.072-.145-.654-1.577-.896-2.158-.236-.57-.475-.49-.654-.5-.17-.008-.363-.01-.556-.01-.193 0-.507.073-.773.362-.266.29-1.014.99-1.014 2.415 0 1.425 1.039 2.802 1.184 3.002.145.193 2.044 3.12 4.954 4.373.692.298 1.233.475 1.654.608.696.222 1.33.19 1.83.115.558-.083 1.72-.702 1.962-1.38.24-.678.24-1.258.17-1.38-.073-.12-.266-.19-.556-.335z" />
+          </svg>
+          <span>Register via WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Secondary Contact -->
+      <div class="mt-6 flex items-center justify-center gap-2 reveal-on-scroll stagger-delay-3">
+        <a href="https://www.tiktok.com/@bintdaudu01" target="_blank"
+          class="inline-flex items-center gap-1.5 text-white/70 hover:text-gold text-sm font-semibold transition-colors">
+          <!-- TikTok Icon -->
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.44-4.14-1.18-.32-.2-.61-.41-.89-.65-.05 2.12-.01 4.24-.03 6.36-.06 2.85-1.17 5.72-3.28 7.64-2.58 2.39-6.53 2.78-9.56 1.11-2.91-1.61-4.71-4.88-4.52-8.23.13-3.66 3.01-6.95 6.67-7.25.96-.08 1.93-.01 2.86.23v4.11c-.72-.25-1.5-.32-2.25-.2-.84.14-1.64.57-2.19 1.23-.74.91-.84 2.22-.4 3.32.48 1.2 1.68 2.04 2.97 2.01 1.48-.03 2.77-1.17 2.99-2.64.12-1.35.04-2.72.06-4.09V.02z" />
+          </svg>
+          <span>Or reach us on TikTok: @bintdaudu01</span>
+        </a>
+      </div>
+
+      <!-- Trust Seal -->
+      <div
+        class="mt-12 pt-8 border-t border-white/10 text-white/50 text-xs md:text-sm font-medium flex flex-wrap items-center justify-center gap-y-2 gap-x-6 reveal-on-scroll">
+        <span>🌍 Open to Students Worldwide</span>
+        <span class="hidden sm:inline">•</span>
+        <span>👦🏽 Ages 4–15</span>
+        <span class="hidden sm:inline">•</span>
+        <span>📅 Aug 3–28, 2026</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 11: FOOTER -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 border-t border-gold-soft/10">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 font-dmsans">
+
+        <!-- Col 1: Brand -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 bg-emerald-deep rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-gold fill-current" viewBox="0 0 24 24">
+                <path d="M12 2l2.4 4.8 5.3-.8-3.5 4.1 2.4 4.8-5.3-.8-2.4 4.8-2.4-4.8-5.3.8 2.4-4.8-3.5-4.1 5.3.8z" />
+              </svg>
+            </div>
+            <span class="font-playfair font-bold text-lg">Bint Daudu Qur'An Academy</span>
+          </div>
+          <p class="text-white/70 text-sm italic max-w-xs mb-4">
+            "Growing Hearts. Building Character. Living the Qur'an."
+          </p>
+          <!-- Geometric Divider Accent -->
+          <div class="w-16 h-0.5 bg-gradient-to-r from-gold to-transparent"></div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <h3 class="text-gold font-playfair font-bold text-base uppercase tracking-wider mb-4">Quick Links</h3>
+          <div class="flex flex-col gap-2.5 text-sm font-semibold text-white/80">
+            <a href="#programme" class="hover:text-gold transition-colors">Programme Details</a>
+            <a href="#pillars" class="hover:text-gold transition-colors">What They'll Learn</a>
+            <a href="#schedule" class="hover:text-gold transition-colors">Class Schedule</a>
+            <a href="#pricing" class="hover:text-gold transition-colors">Tuition & Pricing</a>
+            <a href="#contact" class="hover:text-gold transition-colors">Contact Enquiries</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <h3 class="text-gold font-playfair font-bold text-base uppercase tracking-wider mb-4">Contact</h3>
+          <div class="flex flex-col gap-3 text-sm text-white/80">
+            <a href="https://wa.me/2348150361401" target="_blank"
+              class="flex items-center gap-2 hover:text-gold transition-colors">
+              <i data-lucide="smartphone" class="w-4 h-4 text-emerald-light"></i>
+              <span>WhatsApp: 08150361401</span>
+            </a>
+            <a href="https://www.tiktok.com/@bintdaudu01" target="_blank"
+              class="flex items-center gap-2 hover:text-gold transition-colors">
+              <i data-lucide="music-2" class="w-4 h-4 text-emerald-light"></i>
+              <span>TikTok: @bintdaudu01</span>
+            </a>
+            <div class="flex items-center gap-2 text-white/50">
+              <i data-lucide="mail" class="w-4 h-4 text-white/30"></i>
+              <span>info@bintdaudu.com (Coming Soon)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
+        <span>© 2026 Bint Daudu Qur'An Academy. All rights reserved.</span>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- JS scripts for responsiveness & scroll animations -->
+  <script src="script.js"></script>
+</body>
+
+</html>
