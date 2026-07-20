@@ -1,27 +1,31 @@
-// Initialize Lucide icons
-lucide.createIcons();
+function initializeLucideIcons() {
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
+}
 
-// 1. Dismissable Pre-Nav Bar functionality
 function dismissPreNav() {
   const preNav = document.getElementById('pre-nav-bar');
   const mainNav = document.getElementById('main-nav');
   const spacer = document.getElementById('nav-spacer');
-  
+
+  if (!preNav || !mainNav || !spacer) return;
+
   preNav.style.transform = 'translateY(-100%)';
   mainNav.style.top = '0px';
-  
-  // Update heights after transition
+
   setTimeout(() => {
     preNav.classList.add('hidden');
     spacer.classList.remove('mt-10');
   }, 300);
 }
 
-// 2. Mobile Menu toggle drawer
 function toggleMobileMenu(open) {
   const menu = document.getElementById('mobile-menu');
   const drawer = document.getElementById('mobile-menu-drawer');
-  
+
+  if (!menu || !drawer) return;
+
   if (open) {
     menu.classList.remove('pointer-events-none');
     menu.classList.add('opacity-100');
@@ -33,17 +37,15 @@ function toggleMobileMenu(open) {
   }
 }
 
-// Close menu when clicking outside the drawer
-document.getElementById('mobile-menu').addEventListener('click', function(e) {
-  if (e.target === this) {
-    toggleMobileMenu(false);
-  }
-});
-
-// 3. Scroll spy and Animation Trigger via Intersection Observer
-document.addEventListener('DOMContentLoaded', () => {
+function initializeRevealAnimations() {
   const anims = document.querySelectorAll('.reveal-on-scroll');
-  
+  if (!anims.length) return;
+
+  if (typeof window.IntersectionObserver === 'undefined') {
+    anims.forEach((el) => el.classList.add('active'));
+    return;
+  }
+
   const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -51,37 +53,63 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-        
-        // Check if it's the timeline section to animate the lines
+
         if (entry.target.id === 'programme') {
           const desktopLine = document.getElementById('desktop-timeline-line');
           const mobileLine = document.getElementById('mobile-timeline-line');
           if (desktopLine) desktopLine.style.transform = 'scaleX(1)';
           if (mobileLine) mobileLine.style.transform = 'scaleY(1)';
         }
+
         obs.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  anims.forEach(el => observer.observe(el));
-  
-  // Also observe the programme section specifically for timeline animation triggers
+  anims.forEach((el) => observer.observe(el));
+
   const progSec = document.getElementById('programme');
   if (progSec) observer.observe(progSec);
-});
+}
 
-// Dynamic scroll background change for Navigation
-window.addEventListener('scroll', () => {
+function initializeNavigationEffects() {
   const nav = document.getElementById('main-nav');
-  if (window.scrollY > 50) {
-    nav.classList.add('shadow-md');
-    nav.classList.remove('shadow-sm');
-  } else {
-    nav.classList.add('shadow-sm');
-    nav.classList.remove('shadow-md');
-  }
-});
+  if (!nav) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('shadow-md');
+      nav.classList.remove('shadow-sm');
+    } else {
+      nav.classList.add('shadow-sm');
+      nav.classList.remove('shadow-md');
+    }
+  });
+}
+
+function initializeMobileMenu() {
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (!mobileMenu) return;
+
+  mobileMenu.addEventListener('click', (event) => {
+    if (event.target === mobileMenu) {
+      toggleMobileMenu(false);
+    }
+  });
+}
+
+function initializeSite() {
+  initializeLucideIcons();
+  initializeMobileMenu();
+  initializeRevealAnimations();
+  initializeNavigationEffects();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeSite, { once: true });
+} else {
+  initializeSite();
+}
